@@ -67,7 +67,3 @@ Sequential([
   Dense(29, activation='softmax')
 ])
 
-
-
-# 🚀 Try It Yourself
-Run the notebook on Google Colab and test with your own ASL images!
