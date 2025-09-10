@@ -15,6 +15,45 @@ This project builds and trains a Convolutional Neural Network (CNN) using Tensor
 - Split into training (80%) and validation (20%) sets
 - Augmented data for better generalisation
 
+# 📈 Performance
+-Final training accuracy: ~99.7%
+
+-Validation accuracy: ~72%
+
+-Test accuracy: 100% on sample test set
+
+# Visualisations include:
+
+-Accuracy over epochs
+
+-Confusion matrix
+
+-Class-wise F1 scores
+
+-Sample predictions
+
+# 🔍 Evaluation
+-Classification report using sklearn
+
+-Confusion matrix heatmap with seaborn
+
+-Visual comparison of predicted vs actual gestures
+
+# 🖼️ Inference
+-Predicts gestures from single images or batches
+
+-Supports .jpg and .png formats
+
+-Example usage:
+
+python
+predict_gesture("/path/to/image.jpg")
+
+# 💾 Model Saving
+-Saved as signlanguage_model.h5
+
+-Recommended format: .keras for future compatibility
+
 ## 🏗️ Model Architecture
 
 ```python
@@ -27,49 +66,8 @@ Sequential([
   Dense(128, activation='relu'),
   Dense(29, activation='softmax')
 ])
-- Optimizer: Adam
 
-- Loss Function: Categorical Crossentropy
 
-- Trained for 10 epochs
-
-# 📈 Performance
-Final training accuracy: ~99.7%
-
-Validation accuracy: ~72%
-
-Test accuracy: 100% on sample test set
-
-# Visualizations include:
-
-Accuracy over epochs
-
-Confusion matrix
-
-Class-wise F1 scores
-
-Sample predictions
-
-# 🔍 Evaluation
-Classification report using sklearn
-
-Confusion matrix heatmap with seaborn
-
-Visual comparison of predicted vs actual gestures
-
-# 🖼️ Inference
-Predicts gestures from single images or batches
-
-Supports .jpg and .png formats
-
-Example usage:
-
-python
-predict_gesture("/path/to/image.jpg")
-# 💾 Model Saving
-Saved as signlanguage_model.h5
-
-Recommended format: .keras for future compatibility
 
 # 🚀 Try It Yourself
 Run the notebook on Google Colab and test with your own ASL images!
